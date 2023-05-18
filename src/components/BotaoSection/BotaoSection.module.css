@@ -1,0 +1,24 @@
+.botaoSection {
+    width: 15rem;
+    padding: 1rem;
+    background: #0A4E7499;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.botaoSection:hover {
+    box-shadow: 0 .8rem 1rem var(--primary-color);
+}

@@ -1,0 +1,20 @@
+.imagemSection {
+    width: 70rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+@media (max-width: 1050px) {
+    .imagemSection {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagemSection {
+        width: 50rem;
+    }
+}
