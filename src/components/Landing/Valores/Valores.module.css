@@ -1,0 +1,34 @@
+.valoresSection {
+    height: 73vh;
+    background-color: #43718B;
+}
+
+.areaImagem {
+    width: 21rem;
+    height: inherit;
+    margin: 0 auto;
+}
+.imagemBuki {
+    width: inherit;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* Palavras */
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    position: absolute;
+    background-color: red;
+}
+
+.palavra1 {
+    display: inline-block;
+    position: relative;
+    left: 27%;
+    top: 4rem;
+}

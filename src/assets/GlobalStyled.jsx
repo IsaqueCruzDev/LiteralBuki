@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Prata&display=swap');
+import { createGlobalStyle } from "styled-components";
 
+const GlobalStyled = createGlobalStyle`
 :root {
   --primary-color: #042A3F;
   --secondary-blue-color: #0A4E7499;
@@ -27,3 +28,7 @@ a {
   text-decoration: none;
 }
 
+
+`;
+
+export default GlobalStyled;
