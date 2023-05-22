@@ -3,7 +3,7 @@ import {
     CadastroForm
 } from "./style.jsx";
 
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Cadastro() {
     

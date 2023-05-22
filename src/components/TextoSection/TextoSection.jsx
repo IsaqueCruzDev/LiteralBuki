@@ -1,5 +1,4 @@
 import styles from './TextoSection.module.css';
-import Proptypes from 'prop-types';
 
 function TextoSection(props) {
     return (

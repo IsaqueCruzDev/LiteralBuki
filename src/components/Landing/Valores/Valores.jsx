@@ -1,5 +1,5 @@
 import styles from "./Valores.module.css";
-import Buki from "../../../assets/img/DesinLogoBrancaCompleta.svg";
+import Buki from "../../../assets/img/BukiLogoBranca.svg";
 import Valor36px from "../../PalavrasValores/Valor36px/Valor36px.jsx";
 import Valor38px from "../../PalavrasValores/Valor38px/Valor38px.jsx";
 import Valor45px from "../../PalavrasValores/Valor45px/Valor45px.jsx";
