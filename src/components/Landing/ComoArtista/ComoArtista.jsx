@@ -1,16 +1,52 @@
-import styles from './ComoArtista.module.css';
+import styles from "./ComoArtista.module.css";
+import PngComoArtista from "../../../assets/img/pngcomoartista.png";
+import VetorLivro1 from "../../../assets/img/vetorlivro1.svg";
+import VetorLivro2 from "../../../assets/img/vetorlivro2.svg";
+import VetorLivro3 from "../../../assets/img/vetorlivro3.svg";
+
+import { Link } from "react-router-dom";
 
 function ComoArtista() {
-    return (
-        <>
-            <section className= {styles.comoArtista}>
-                <h2>Como Artista,</h2>
-                <p>Você é motivado pela paixão, criatividade e imaginação.<br/>
-                    A <span>Buki é motivada</span> pelo desejo de <span>abrir o seu caminho até o sucesso</span><br/> e te oferecer <span>independência e poder</span> de decisão.</p>
-                <button type="button">Venha descobrir mais</button>
-            </section>
-        </>
-    )
+  return (
+    <>
+      <section className={styles.comoArtista}>
+        <div className={styles.areaComoArtista}>
+          <div className={styles.divComoArtista}>
+            <div className={styles.areaTexto}>
+              <h2>Como Artista,</h2>
+              <p>
+                A paixão, a criatividade e a imaginação te motivam. A{" "}
+                <span>Buki é motivada</span> pelo desejo de{" "}
+                <span>abrir o seu caminho até o sucesso</span>
+                <br /> e te oferecer <span>independência e poder</span> de
+                decisão.
+              </p>
+
+              <div className={styles.areaBotao}>
+                <Link to="/cadastro">
+                  <button type="button">Fazer parte!</button>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.comoArtistaDivImg}>
+              <img src={PngComoArtista} className= {styles.imagemPng} alt="" />
+            </div>
+            <div className= {styles.vetorLivro1}>
+              <img src={VetorLivro1} alt="" />
+            </div>
+
+            <div className= {styles.vetorLivro2}>
+              <img src={VetorLivro2} alt="" />
+            </div>
+
+            <div className= {styles.vetorLivro3}>
+              <img src={VetorLivro3} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
-export default ComoArtista
+export default ComoArtista;

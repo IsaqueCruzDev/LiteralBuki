@@ -5,14 +5,18 @@ export const HeaderStyled = styled.header`
     flex-direction: none;
     justify-content: space-between;
     align-items: center;
-    padding: 0 9%;
-    background-color: var(--light-gray);
+    padding: 0 6%;
+    padding-top: .8rem;
+    padding-bottom: .5rem;
     color: var(--primary-color);
-    height: 5.3rem;
 
     > h1 {
     font-size: 2.8rem;
         
+    }
+
+    div img {
+        width: 5rem;
     }
 
 @media (max-width: 1200px) { 
@@ -28,10 +32,14 @@ export const MenuStyled = styled.nav`
     list-style: none;
     align-items: center;
 
-    li {
-    padding-left: 11rem;
+    li.link {
+    margin-left: 8rem;
     font-size: 1.6rem;
     transition: all 1s ease-in-out;
+    }
+
+    li.separaLink {
+        font-size: 1.4rem;
     }
     
     a {
@@ -44,14 +52,39 @@ export const MenuStyled = styled.nav`
         font-size: 1.7rem;
     }
 
-    li:last-child a{
+    li.separaLink {
+        margin-left: 2rem;
+    }
+
+    li.linkPaginas {
+        margin-left: 2rem;
+    }
+    
+    li:last-child.botaoEntrar a{
     font-weight: 600;
+    font-size: 1.6rem;
+    border: .1rem solid #FF543E;
+    border-radius: 1rem;
+    color: #454856;
     transition: all 5s ease-in-out;
     -webkit-transition:  .5s ease;
     -moz-transition:  .5s ease;
     -ms-transition:  .5s ease;
     -o-transition:  .5s ease;
-    padding: .8rem 1.3rem;
+    padding: 1rem 3rem;
+}
+    li:last-child.botaoCadastro a{
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: .1rem solid var(--cor-botao);
+    border-radius: 1rem;
+    color: #454856;
+    transition: all 5s ease-in-out;
+    -webkit-transition:  .5s ease;
+    -moz-transition:  .5s ease;
+    -ms-transition:  .5s ease;
+    -o-transition:  .5s ease;
+    padding: 1rem 2rem;
 }
 
     li:last-child a:hover{
@@ -66,17 +99,17 @@ export const MenuStyled = styled.nav`
 
 @media (max-width: 1200px) { 
     z-index: 9999;
-    li {
-        padding-left: 9rem;
+    li.link {
+        margin-left: 4rem;
     }
 }
 
 @media (max-width: 900px) {
     li {
-    padding-left: 7rem;
+    padding-left: 1rem;
     }
 }
-@media (max-width: 800px) { 
+@media (max-width: 1000px) { 
     background: #fff;
     background: linear-gradient(90deg, rgba(4,42,63,1) 0%, rgba(50,125,166,1) 25%, rgba(188,244,255,0.7539390756302521) 100%);
     align-items: center;
@@ -87,7 +120,7 @@ export const MenuStyled = styled.nav`
     right: 0;
     bottom: 0;
     left: 0;
-    display: ${({show}) => show ? 'block' : 'none'};
+    display: ${({ show }) => show ? 'block' : 'none'};
 
     li {
         padding: 0;
@@ -130,12 +163,12 @@ export const MenuContentStyled = styled.div`
     cursor: pointer;
     display: none;
     z-index: 99999;    
-
-    @media (max-width: 800px) { 
+    
+    @media (max-width: 1000px) { 
         display: block;
     }
 `;
 
 export const MenuIconStyled = styled.img`
-    width: 2.8rem;
+    width: 1rem;
 `;

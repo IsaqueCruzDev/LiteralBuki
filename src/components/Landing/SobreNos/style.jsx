@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SobreNosStyled = styled.section`
-    background-color: #BEA25A;
+    background-color: #D9D9D9;
     align-items: center;
     justify-content: center;
     padding-top: 3rem;

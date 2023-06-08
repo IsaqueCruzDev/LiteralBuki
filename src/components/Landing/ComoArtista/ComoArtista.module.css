@@ -1,18 +1,40 @@
 .comoArtista {
+    padding: 0 4%;
+}
+
+.areaComoArtista {
+    width: 100%;
+    background: linear-gradient(to left top, #EA6564, #5272A5);
+    border-radius:48px 48px 300px 48px;;
+    -webkit-border-radius:48px 48px 300px 48px;
+    -moz-border-radius:48px 48px 300px 48px;
+    -ms-border-radius:48px 48px 300px 48px;
+    -o-border-radius:48px 48px 300px 48px;
+}
+
+.divComoArtista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areaTexto {
+    margin: 0 auto;
+    position: relative;
+    left: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50rem;
-    background-color: #fff;
-    color: var(--primary-color);
-    padding: 0 9%;
+    flex-wrap: wrap;
 }
 
 .comoArtista h2 {
     font-size: 6.2rem;
     font-family: "Prata", sans-serif;
     font-weight: bold;
+    color: #fff;
+    text-align: center;
 }
 
 .comoArtista p {
@@ -20,6 +42,8 @@
     font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
     text-align: center;
+    color: #fff;
+    font-weight: lighter;
 }
 
 .comoArtista p span {
@@ -27,15 +51,19 @@
 }
 
 .comoArtista button {
-    background: var(--primary-color);
-    padding: 1.5rem 2.5rem;
+    background: #8886E7;
+    width: 20rem;
+    padding: 1rem 2.2rem;
     color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0 .5rem .5rem #18181867;
     margin-top: 2.5rem;
-    border-radius: 3rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
@@ -48,17 +76,112 @@
     box-shadow: 0 .5rem 1rem var(--secondary-blue-color);
 }
 
+.comoArtistaDivImg {
+    position: relative;
+    left: 5.3rem;
+    bottom: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.imagemPng {
+    width: 70rem;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.vetorLivro1 {
+    position: absolute;
+    left: 7.5rem;
+    bottom: 1.8rem;
+}
+
+.vetorLivro2 {
+    position: absolute;
+    bottom: -4.3rem;
+    left: 48rem;
+}
+
+.vetorLivro3 {
+    position: absolute;
+    top: 21rem;
+    right: 2.8rem;
+}
+
+@media (max-width: 1280px) { 
+    .vetorLivro1 {
+        position: static;
+        left: 7.5rem;
+        bottom: 1.8rem;
+        display: none;
+
+    }
+    
+    .vetorLivro2 {
+        position: static;
+        bottom: -4.3rem;
+        left: 48rem;
+        display: none;
+    }
+    
+    .vetorLivro3 {
+        position: static;
+        top: 21rem;
+        right: 2.8rem;
+        display: none;
+
+    }
+}
+
+@media (max-width: 1250px) { 
+
+    .divComoArtista {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 5%;
+    }
+
+    
+    .areaTexto {
+        margin: 5rem auto;
+        position: static;
+        left: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .comoArtistaDivImg {
+        position: static;
+        left: 5.3rem;
+        bottom: 1rem;
+        flex-wrap: wrap;
+    
+    }
+}
 
 @media (max-width: 1200px) { 
     html {
         font-size: 58%;
     }
+
 }
 
 
 @media (max-width: 1020px) { 
     html {
         font-size: 57%;
+    }
+
+    .imagemPng {
+        width: 68rem;
     }
 
 }
@@ -68,6 +191,10 @@
         font-size: 55%;
     }  
 
+    .imagemPng {
+        width: 63rem;
+    }
+
 }
 
 @media (max-width: 728px) {
@@ -76,7 +203,20 @@
     }
 
     .comoArtista {
-        padding: 6rem 0;
+        padding: 0 2%;
+    }
+
+    .imagemPng {
+        width: 50rem;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 52%;
+    }
+
+    .imagemPng {
+        width: 45rem;
     }
 }
 
@@ -84,4 +224,9 @@
     html {
         font-size: 52%;
     }
+
+    .imagemPng {
+        width: 45rem;
+    }
 }
+

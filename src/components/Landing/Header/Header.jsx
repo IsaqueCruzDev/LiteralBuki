@@ -8,6 +8,8 @@ import {
 
 import menu from "../../../assets/img/iconmenu.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import BukiLogo from "../../../assets/img/bukiLogo.svg";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -15,30 +17,46 @@ function Header() {
   const toggleMenu = () => {
     setShow(!show);
   }
+  
   return (
     <>
       <HeaderStyled>
-        <h1>BUKI</h1>
+        <Link to="/">
+        <div>
+          <img src={BukiLogo} alt="" />
+          </div>
+        </Link>
+          
         <MenuStyled show={show}>
-          <li>
+         <li className=" link">
             <a href="#">Home</a>
           </li>
-          <li>
-            <a href="#">Sobre nós</a>
+          <li className=" link">
+            <a href="#">Quem somos</a>
           </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>          
+          <li className=" link">
             <a href="#">Contato</a>
           </li>
-          <li>  
-            <a href="#">Entrar</a>
+          <li className=" link">          
+            <a href="#">Parceiros</a>
           </li>
+          <Link to="/login">
+            <li className= "botaoEntrar linkPaginas">  
+            <a href="#">Entrar</a>
+            </li>
+          </Link>
+
+          <li className= "separaLink">ou</li>
+          
+          <Link to="/cadastro">
+            <li className= "botaoCadastro linkPaginas">  
+            <a href="#">Cadastrar</a>
+            </li>
+          </Link>
         </MenuStyled>
 
         <MenuContentStyled>
-          <MenuIconStyled onClick={toggleMenu} src={menu} width="24px"/>
+          <MenuIconStyled onClick={toggleMenu} src={menu}/>
         </MenuContentStyled>
       </HeaderStyled>
     </>

@@ -11,7 +11,7 @@ export default function SobreNos() {
     return (
         <SobreNosStyled>
             <SobreNosDivStyled>
-            <h2>Sobre Nós</h2>
+            <h2>Quem Somos Nós?</h2>
                 <SobreNosTextStyled>
                 <p> <span>A BUKI nasceu da colaboração de oito jovens fascinados por 
                     tecnologia e leitura. <br />
