@@ -1,10 +1,10 @@
 // import React from "react";
 import ComoArtista from "../../components/Landing/ComoArtista/ComoArtista.jsx";
-import ConhecaBuki from "../../components/Landing/ConhecaBuki/ConhecaBuki.jsx";
+import FazerAntesMorrer from "../../components/Landing/FazerAntesMorrer/FazerAntesMorrer.jsx";
 import Header from "../../components/Landing/Header/Header.jsx";
-import Valores from "../../components/Landing/Valores/Valores.jsx";
 import Informacoes from "../../components/Landing/Informacoes/Informacoes.jsx";
-import SectionCadastro from "../../components/Landing/SectionCadastro/SectionCadastro.jsx";
+import Vantagens from "../../components/Landing/Vantagens/Vantagens.jsx";
+import QueroCadastrar from "../../components/Landing/QueroCadastrar/QueroCadastrar.jsx";
 import SobreNos from "../../components/Landing/SobreNos/SobreNos.jsx";
 import Footer from "../../components/Landing/Footer/Footer.jsx";
 
@@ -13,10 +13,10 @@ export default function Landing() {
     <>      
       <Header />
       <ComoArtista />
-      <ConhecaBuki />
+      <FazerAntesMorrer />
       <Informacoes />
-      <Valores />
-      <SectionCadastro />
+      <Vantagens />
+      <QueroCadastrar />
       <SobreNos />
       <Footer />
     </>

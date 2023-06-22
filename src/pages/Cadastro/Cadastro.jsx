@@ -1,13 +1,15 @@
 import { CadastroStyled, InformacoesCadastroStyled } from "./style.jsx";
 import { Link } from "react-router-dom";
 import BukiLogo from "../../assets/img/bukiLogo.svg";
+import { useState } from "react";
+
 export default function Cadastro() {
+
   return (
     <CadastroStyled>
       <InformacoesCadastroStyled>
         <div className="mensagem mensagemCadastroRoxo mensagem1">
           <p>
-            {" "}
             <span>Autores talentosos</span>, encontram os profissionais que
             darão vida às suas histórias.
           </p>
@@ -79,6 +81,7 @@ export default function Cadastro() {
                   placeholder="+8 Caracteres"
                   className="input"
                   required
+
                 />
               </div>
 
@@ -88,8 +91,9 @@ export default function Cadastro() {
                   type="password"
                   id="confirmacaoSenha"
                   placeholder="Confirme sua senha"
-                  className="input"
+                  className= "input"
                   required
+
                 />
               </div>
             </div>

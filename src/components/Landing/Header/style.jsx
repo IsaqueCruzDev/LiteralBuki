@@ -40,6 +40,7 @@ export const MenuStyled = styled.nav`
 
     li.separaLink {
         font-size: 1.4rem;
+        margin-left: 2rem;
     }
     
     a {
@@ -50,10 +51,6 @@ export const MenuStyled = styled.nav`
 
     a:hover {
         font-size: 1.7rem;
-    }
-
-    li.separaLink {
-        margin-left: 2rem;
     }
 
     li.linkPaginas {
@@ -88,9 +85,8 @@ export const MenuStyled = styled.nav`
 }
 
     li:last-child a:hover{
-    font-weight: bolder;
     background-color: rgb(255, 255, 255);
-    border-radius: 3rem;
+    border-radius: 2.5;
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
     -ms-border-radius: 3rem;
@@ -110,22 +106,34 @@ export const MenuStyled = styled.nav`
     }
 }
 @media (max-width: 1000px) { 
-    background: #fff;
-    background: linear-gradient(90deg, rgba(4,42,63,1) 0%, rgba(50,125,166,1) 25%, rgba(188,244,255,0.7539390756302521) 100%);
+    background-color: #fff;
+    min-width: 25rem;
+    height: 33rem;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 3rem;
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 8rem;
+    right: 3.5rem;
     display: ${({ show }) => show ? 'block' : 'none'};
 
     li {
         padding: 0;
-        margin: 5rem 0;
+        margin: 1.8rem 0;
         text-align: center;
+    }
+
+    li.link {
+        margin-left: 0;
+    }
+
+    li.linkPaginas {
+        margin-left: 0;
+    }
+
+    li.separaLink {
+        font-size: 1.4rem;
+        margin-left: 0;
     }
 
     li a {
@@ -136,8 +144,9 @@ export const MenuStyled = styled.nav`
     }
 
     li a:hover {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         background-color: #fff;
+        color:  #FF543E;
     }
 
     li:last-child a{
@@ -149,7 +158,7 @@ export const MenuStyled = styled.nav`
     }
 
     li:last-child a:hover {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 

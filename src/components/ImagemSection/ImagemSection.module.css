@@ -1,20 +1,25 @@
-.imagemSection {
-    width: 70rem;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+.sectionImage {
+    width: 23rem;
+    height: 28rem;
+    box-shadow: 0 1rem 3rem #a2b3bfc4;
+    border-radius: 4.8rem;
+    -webkit-border-radius: 4.8rem;
+    -moz-border-radius: 4.8rem;
+    -ms-border-radius: 4.8rem;
+    -o-border-radius: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionImage p {
+    text-align: center;
+    font-size: 2.8rem;
 }
 
 @media (max-width: 1050px) {
-    .imagemSection {
-        padding-bottom: 2.5rem;
-    }
 }
 
 @media (max-width: 600px) {
-    .imagemSection {
-        width: 50rem;
-    }
 }

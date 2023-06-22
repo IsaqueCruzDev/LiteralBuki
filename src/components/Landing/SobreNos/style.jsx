@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
 export const SobreNosStyled = styled.section`
-    background-color: #D9D9D9;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
     padding-bottom: 3rem;
 
     h2 {
         text-align: center;
-        font-family: "Prata", poppins, sans-serif;
-        font-size: 6rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 4rem;
         font-weight: 400;
-        color: var(--primary-color);
+        color: #fff;
+        background-color: #EA6564;
+        width: 100%;
+        padding: 3rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 7rem;
     }
 
     p {
@@ -54,6 +57,7 @@ export const AreaFotoStyled = styled.div`
 
     p {
         font-size: 1.4rem;
+        color: #F74B35;
     }
 `;
 
@@ -61,4 +65,32 @@ export const EquipeBukiStyled = styled.img`
     width: inherit;
 `;
 
+export const ApoioStyled = styled.section`
+    padding: 0 4%;
+
+    h3 {
+        margin-top: 2rem;
+        color:  #F74B35;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-family: "Prata", sans-serif;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        align-items: center;
+    }
+
+    div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+`;
 

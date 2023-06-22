@@ -13,9 +13,9 @@ function ComoArtista() {
         <div className={styles.areaComoArtista}>
           <div className={styles.divComoArtista}>
             <div className={styles.areaTexto}>
-              <h2>Como Artista,</h2>
+              <h2>Artista,</h2>
               <p>
-                A paixão, a criatividade e a imaginação te motivam. A{" "}
+                paixão, criatividade e imaginação te inspiram. A{" "}
                 <span>Buki é motivada</span> pelo desejo de{" "}
                 <span>abrir o seu caminho até o sucesso</span>
                 <br /> e te oferecer <span>independência e poder</span> de
@@ -24,7 +24,7 @@ function ComoArtista() {
 
               <div className={styles.areaBotao}>
                 <Link to="/cadastro">
-                  <button type="button">Fazer parte!</button>
+                  <button type="button">Faça parte!</button>
                 </Link>
               </div>
             </div>
