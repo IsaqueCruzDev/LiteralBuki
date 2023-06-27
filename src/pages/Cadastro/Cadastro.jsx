@@ -8,30 +8,34 @@ export default function Cadastro() {
   const [senhaMatch, setSenhaMatch] = useState(true);
 
   const [usuario, setUsuario] = useState({
-    nome: "",
+    name: "",
     username: "",
     email: "",
-    senha: "",
-    confirmacaoSenha: ""
+    password: "",
   });
 
   const [cadastro, setCadastro] = useState(usuario);
 
+  const cadastrar = () => {
+    fetch('http://localhost:8080/api/v1/registration',{
+      method:'post',
+      body:JSON.stringify(cadastro),
+      headers:{
+        'Content-type':'application/json',
+        'Accept':'application/json'
+      }
+    })
+    // {.then(retorno = retorno.json())
+    // .then(retorno_convertido => {
+    //   console.log(retorno_convertido);
+    // } )}
+  }
   const handleChange = (e) => {
     setCadastro({...cadastro, [e.target.name]: e.target.value});
     };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (cadastro.senha === cadastro.confirmacaoSenha) {
-      console.log('Cadastro realizado com sucesso!');
-      setSenhaMatch(true);
-    } else {
-      alert('As senhas não coincidem!');
-      console.log('As senhas não coincidem!');
-      setSenhaMatch(false);
-    }
 
     const usuarioJSON = JSON.stringify(cadastro);
   };
@@ -79,7 +83,7 @@ export default function Cadastro() {
                 <input
                   type="text"
                   id="nome"
-                  name="nome"
+                  name="name"
                   placeholder="Nome"
                   required
                   className="input"
@@ -115,7 +119,7 @@ export default function Cadastro() {
                 <input
                   type="password"
                   id="senha"
-                  name="senha"
+                  name="password"
                   placeholder="+8 Caracteres"
                   className="input"
                   onChange={handleChange}
@@ -137,7 +141,7 @@ export default function Cadastro() {
                 />
               </div>
             </div>
-            <button className= "botao">Criar conta</button>
+            <button className= "botao" onClick={cadastrar}>Criar conta</button>
           </form>
         </div>
       </div>
