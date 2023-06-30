@@ -51,7 +51,6 @@ export const LoginStyled = styled.section`
     }
 
     .divFormulario input {
-        width: inherit;
         background-color:#F0EBEB;
         height: 5rem;
         border-radius: 1.5rem;
@@ -93,6 +92,55 @@ export const LoginStyled = styled.section`
         right: 3rem;
         bottom: 1rem;
     }
+
+    @media (max-width: 992px) {
+
+        .divFormulario label {
+        color: #042A3F;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-left: 0;
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    .divFormulario form .inputDuplo div input {
+        width: 45%;
+    }
+    }
+
+    @media (max-width: 768px) {
+
+.divFormulario label {
+color: #042A3F;
+font-size: 2rem;
+font-weight: 600;
+padding-left: 0;
+display: flex;
+margin-top: 3rem;
+}
+
+.divFormulario form .inputDuplo div input {
+width: 50%;
+}
+}
+
+
+@media (max-width: 555px) {
+
+.divFormulario label {
+color: #042A3F;
+font-size: 2rem;
+font-weight: 600;
+padding-left: 0;
+display: flex;
+margin-top: 3rem;
+}
+
+.divFormulario form .inputDuplo div input {
+width: 60%;
+}
+}
 `;
 
 export const InformacoesLoginStyled = styled.section`
@@ -117,7 +165,7 @@ export const InformacoesLoginStyled = styled.section`
         position: relative;
         left: -1rem;
         bottom: -20rem;
-;
+
     }
 
     .mensagem p{
@@ -128,5 +176,43 @@ export const InformacoesLoginStyled = styled.section`
 
     .mensagem p span{
         font-weight: 400;
+    }
+
+    @media (max-width: 992px) {
+    
+    width: 45rem;
+    height: 100vh;
+    background-image: url(${BackgroundLogin});
+    background-size: cover;
+    float: left;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .mensagem {
+        width: 41rem;
+        border-radius: 1.5rem;
+        height: 11.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #8886E7;
+        padding: 2rem;
+        position: relative;
+        left: -1rem;
+        bottom: -20rem;
+
+    }
+
+    .mensagem p{
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 200;
+    }
+
+    .mensagem p span{
+        font-weight: 400;
+    }
+
     }
 `;

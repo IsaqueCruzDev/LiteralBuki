@@ -5,10 +5,12 @@ import BukiLogoBranca from "../../../assets/img/bukiBranco.png";
 export default function QueroCadastrar() {
   return (
     <QueroCadastrarStyled>
-      <div className= "divGeral">
+      <div className="divGeral">
+        <Link to="/cadastro">
         <div className= "areaTitulo">
           <h2>Quero me Cadastrar!</h2>
-        </div>
+          </div>
+          </Link>
 
         <div className= "divLogo">
             <img src={BukiLogoBranca} className= "bukiLogo" />

@@ -11,7 +11,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
 }
+.imagemSection {
+    width: 12rem;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+.sectionImage:hover .imagemSection{
+    width: 15rem;
+}
+
 
 .sectionImage p {
     text-align: center;

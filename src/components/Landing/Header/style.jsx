@@ -164,8 +164,6 @@ export const MenuStyled = styled.nav`
 
 `;
 
-
-
 export const MenuContentStyled = styled.div`
     position: fixed;
     right: 5%;

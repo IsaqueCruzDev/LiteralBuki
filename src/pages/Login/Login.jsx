@@ -6,8 +6,8 @@ import { useState } from "react";
 export default function Cadastro() {
 
   const [usuario, setUsuario] = useState({
-    usuario: "",
-    senha: ""
+    username: "",
+    password: ""
   });
 
   const [login, setLogin] = useState(usuario);
@@ -57,7 +57,7 @@ export default function Cadastro() {
                   name="usuario"
                   placeholder="Nome de Usuário"
                   required
-                  className="input"
+                  className= "input"
                   onChange={handleChange}
                 />
               </div>
@@ -69,7 +69,7 @@ export default function Cadastro() {
                   name="senha"
                   placeholder="Senha"
                   required
-                  className="input"
+                  className= "input"
                   onChange={handleChange}
                 />
                 <Link to="/">

@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import BukiLogo from "../../../assets/img/bukiLogo.svg";
 
-function Header() {
+function Header(props) {
   const [show, setShow] = useState(false);
 
   const toggleMenu = () => {
@@ -29,7 +29,7 @@ function Header() {
           
         <MenuStyled show={show}>
          <li className=" link">
-            <a href="#">Home</a>
+            <a href="#" >Home</a>
           </li>
           <li className=" link">
             <a href="#">Quem somos</a>
