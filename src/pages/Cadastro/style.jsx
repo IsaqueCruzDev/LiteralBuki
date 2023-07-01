@@ -87,6 +87,10 @@ export const CadastroStyled = styled.section`
         bottom: 1rem;
     }
 
+    .bukiHome img{
+        width: 6rem;
+    }
+
     @media(max-width: 1200px) {
 
     }

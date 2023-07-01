@@ -1,8 +1,4 @@
-import {
-    FeedStyled,
-    AreaPrincipalStyled,
-    LateralStyled
-} from "./style.jsx";
+import { FeedStyled, AreaPrincipalStyled, LateralStyled } from "./style.jsx";
 
 import Sidebar from "../../components/Siderbar/Sidebar.jsx";
 import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
@@ -15,61 +11,129 @@ import FotoPerfil2 from "../../assets/img/Notificacoes/elliewilliams.jpeg";
 import FotoPerfil3 from "../../assets/img/Notificacoes/harry.jpeg";
 
 import PulicacaoFeed from "../../components/PublicacaoFeed/PublicacaoFeed.jsx";
+import PostagemLateral from "../../components/PostagemLateral/PostagemLateral.jsx";
 
-export default function Feed() {   
-    
-    const usuario = "Andre Santana";
+import SvgFeed from "../../assets/img/svgFeed.svg";
+import EstatisticaFeed from "../../assets/img/estatisticaFeed.svg";
 
-    return (
-        <FeedStyled>
-            <Sidebar tipoItem2= "abaEscolhida"
-                itemSidebar1={<ItemSidebar nomeItem="Meu Perfil" icon="fa-solid fa-user"  />}
-                itemSidebar2={<ItemSidebar nomeItem="Feed" icon="fa-solid fa-home" tipoItem="abaEscolhida" />}
-                itemSidebar3={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
-                itemSidebar4={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
-            />
-        
-        <AreaPrincipalStyled>
-                <div className= "procurar">
-                    <input type="text" name="" id="" placeholder="Pesquisar" />
-                    <div>
-                        <i className= "fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
+export default function Feed() {
+  const usuario = "Andre Santana";
 
-                <div className= "publicar">
-                    <div className= "principal">
-                        <div className= "imagemPerfilPublicar">
-                            <img src= {FotoPerfil1} />
-                        </div>
-                        <div className= "inputPublicar">
-                            <input type="text" name="" id="" placeholder="Compartilhe sua próxima ideia..." />
-                        </div>
-                        <div className= "inputFile">
-                            <label htmlFor="file">
-                            <i className= "fa-solid fa-link"></i>
-                            </label>
-                            <input type="file" name="file" id="file" />
-                        </div>
-                    </div>
-                    <div className= "botaoPublicar">
-                        <button>Publicar</button>
-                    </div>
-                </div>
+  return (
+    <FeedStyled>
+      <Sidebar
+        tipoItem2="abaEscolhida"
+        itemSidebar1={
+          <ItemSidebar nomeItem="Meu Perfil" icon="fa-solid fa-user" />
+        }
+        itemSidebar2={
+          <ItemSidebar
+            nomeItem="Feed"
+            icon="fa-solid fa-home"
+            tipoItem="abaEscolhida"
+          />
+        }
+        itemSidebar3={
+          <ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />
+        }
+        itemSidebar4={
+          <ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />
+        }
+      />
 
-                <div className= "artigos">
-                    <PulicacaoFeed usuario={usuario} fotoPerfil={FotoPerfil1} imagemPubli={BackgroundFeed1} texto= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. " />
+      <AreaPrincipalStyled>
+        <div className="procurar">
+          <input type="text" name="" id="" placeholder="Pesquisar" />
+          <div>
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
 
-                    <PulicacaoFeed usuario="Iago Angel" fotoPerfil={FotoPerfil2} imagemPubli={BackgroundFeed2} texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. " />
-                    
-                    <PulicacaoFeed usuario= "Isaque Cruz" fotoPerfil={FotoPerfil3} imagemPubli={BackgroundFeed3} texto= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. " />
-                </div>
-                </AreaPrincipalStyled> 
+        <div className="publicar">
+          <div className="principal">
+            <div className="imagemPerfilPublicar">
+              <img src={FotoPerfil1} />
+            </div>
+            <div className="inputPublicar">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Compartilhe sua próxima ideia..."
+              />
+            </div>
+            <div className="inputFile">
+              <label htmlFor="file">
+                <i className="fa-solid fa-link"></i>
+              </label>
+              <input type="file" name="file" id="file" />
+            </div>
+          </div>
+          <div className="botaoPublicar">
+            <button>Publicar</button>
+          </div>
+        </div>
 
-            {/* <LateralStyled>
-                <h1>sessao</h1>
-            </LateralStyled> */}
-{/* 
+        <div className="artigos">
+          <PulicacaoFeed
+            usuario={usuario}
+            fotoPerfil={FotoPerfil1}
+            imagemPubli={BackgroundFeed1}
+            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. "
+          />
+
+          <PulicacaoFeed
+            usuario="Iago Angel"
+            fotoPerfil={FotoPerfil2}
+            imagemPubli={BackgroundFeed2}
+            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. "
+          />
+
+          <PulicacaoFeed
+            usuario="Isaque Cruz"
+            fotoPerfil={FotoPerfil3}
+            imagemPubli={BackgroundFeed3}
+            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. "
+          />
+        </div>
+      </AreaPrincipalStyled>
+
+      <div className= "lateralDireita">
+        <LateralStyled>
+          <PostagemLateral
+            titulo="Anne Lannister"
+            imagem=""
+            texto="”É incrível o talento dessa 
+            garota!!!”"
+          />
+
+          <PostagemLateral
+            titulo="Olá, Camilla! Aqui estão as dicas de hoje para o seu perfil!"
+            imagem={SvgFeed}
+            texto="É só clicar e aproveitar ;)"
+          />
+
+          <PostagemLateral
+            titulo="Dam Makson"
+            imagem=""
+            texto="🔔 Notificação 🔔"
+          />
+
+          <PostagemLateral
+            titulo="Nossa equipe tem trabalhado arduamente para trazer a vocês algumas melhorias incríveis na plataforma."
+            imagem={EstatisticaFeed}
+            texto=""
+          />
+
+          <PostagemLateral
+            titulo="organizaremos um evento especial no próximo fim de semana."
+            imagem=""
+            texto="
+                É só clicar e aproveitar! ;)"
+          />
+        </LateralStyled>
+      </div>
+      {/* 
         <div className= "sidebar-left">
             <div className= "teste1">
                 <div className="sidetotal">
@@ -108,6 +172,6 @@ export default function Feed() {
                 </div>
             </div>
         </div> */}
-        </FeedStyled>
-    )
+    </FeedStyled>
+  );
 }

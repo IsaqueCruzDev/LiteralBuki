@@ -5,9 +5,14 @@ export const FeedStyled = styled.section`
     overflow: auto;
     position: relative;
     display: flex;
+    justify-content: space-between;
     
     .segura {
         margin-left: 25rem;
+    }
+
+    .lateralDireita {
+        display: flex;
     }
     
 .sidebar-right {
@@ -126,6 +131,11 @@ img {
 }
 
 @media (max-width: 1000px) {
+
+    .lateralDireita {
+        display: flex;
+        position: absolute;
+    }
     
     .input-publicar input {
         width: 100%;
@@ -177,8 +187,7 @@ export const AreaPrincipalStyled = styled.section`
     gap: 6rem;
     border-left: 1px solid #DBD4D4;
     border-right: 1px solid #DBD4D4;
-    width: 60%;
-    border: 1px solid red;
+    width: 100%;
     margin-left: 25rem;
 
 .procurar {
@@ -342,11 +351,25 @@ export const AreaPrincipalStyled = styled.section`
     width: 100%;
     margin-left: 0;
     margin: 0 auto;
+    margin-top: 38rem;
 }
 
 `;
 
 export const LateralStyled = styled.section`
-    border: 1px solid blue;
     width: 30rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1000px) {
+        margin-top: 13.1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+        background: linear-gradient(to left top, #EA6564, #5272A5);
+
+
+    }
 `;

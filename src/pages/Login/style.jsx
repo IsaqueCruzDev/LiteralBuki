@@ -89,8 +89,13 @@ export const LoginStyled = styled.section`
 
     .bukiHome {
         position: absolute;
-        right: 3rem;
+        right:   3rem;
         bottom: 1rem;
+    }
+
+    .bukiHome mdsadimg{
+        width: 6rem;
+
     }
 
     @media (max-width: 992px) {
