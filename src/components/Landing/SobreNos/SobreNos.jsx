@@ -42,7 +42,7 @@ export default function SobreNos() {
             <EquipeBukiStyled src={equipeBuki} />
             <p>
               Da esquerda para a direita: Matheus, Amanda, Isaque, Leonardo,
-              Guilherme, Raquel. <br /> Emaixo: Arthur e Lucas.
+              Guilherme, Raquel. <br /> Embaixo: Arthur e Lucas.
             </p>
           </AreaFotoStyled>
         </SobreNosTextStyled>
