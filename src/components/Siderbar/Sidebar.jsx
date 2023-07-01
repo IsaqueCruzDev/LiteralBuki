@@ -57,7 +57,7 @@ export default function Sidebar(props) {
                 <Link to="/">
                   <li className= {props.tipoItem4}>{props.itemSidebar4}</li>
                 </Link>
-                
+                 
               </NavegacaoUl>
 
           <div className= "final">

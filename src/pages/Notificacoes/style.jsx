@@ -16,6 +16,7 @@ export const NotificacaoStyled = styled.section`
     justify-content: center;
     width: inherit;
     height: 100vh;
+
   }
 
   .notificacao {
@@ -227,6 +228,15 @@ export const NotificacaoStyled = styled.section`
       padding: 1rem 1rem;
       justify-content: center;
     }
+
+    
+  .container {
+    display: inline-flex;
+    justify-content: center;
+    width: inherit;
+    height: 100vh;
+    margin-top: 15rem;
+  }
   }
 `;
 

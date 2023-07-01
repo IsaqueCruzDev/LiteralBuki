@@ -11,10 +11,16 @@ export const SidebarStyled = styled.section`
   position: fixed;
   background: #fff;
 
+  .perfilMenu {
+    display: flex;
+    gap
+  }
+
   .perfilMenu header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
 
   .perfilMenu header h3{
@@ -124,6 +130,7 @@ export const NavegacaoUl = styled.ul`
 
   li {
     display: flex;
+    
     padding: 1.3rem;
     margin-top: 1rem;
     border-radius: 10rem;
@@ -214,6 +221,7 @@ export const MenuStyled = styled.div`
   cursor: pointer;
   display: none;
   z-index: 9999;
+
   img {
     width: 4.5rem;
   }

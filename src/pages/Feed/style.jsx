@@ -4,6 +4,11 @@ export const FeedStyled = styled.section`
     background: #EEEEEE;
     overflow: auto;
     position: relative;
+    display: flex;
+    
+    .segura {
+        margin-left: 25rem;
+    }
     
 .sidebar-right {
     width: 15.25rem;
@@ -120,7 +125,20 @@ img {
     width: 80%;
 }
 
-
+@media (max-width: 1000px) {
+    
+    .input-publicar input {
+        width: 100%;
+        max-width: 1000px;
+        height: 65px;
+        margin-left: 10%;
+        padding-left: 1rem;
+        border: none;
+        border-radius: 15px;
+        background-color: #ECEBEA;
+    }
+}
+    
 @media (max-width: 850px) {
     
     .input-publicar input {
@@ -160,6 +178,7 @@ export const AreaPrincipalStyled = styled.section`
     border-left: 1px solid #DBD4D4;
     border-right: 1px solid #DBD4D4;
     width: 60%;
+    border: 1px solid red;
     margin-left: 25rem;
 
 .procurar {
@@ -328,5 +347,6 @@ export const AreaPrincipalStyled = styled.section`
 `;
 
 export const LateralStyled = styled.section`
-
+    border: 1px solid blue;
+    width: 30rem;
 `;

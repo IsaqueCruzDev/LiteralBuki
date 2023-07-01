@@ -28,7 +28,7 @@ export default function Feed() {
                 itemSidebar3={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
                 itemSidebar4={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
             />
-
+        
         <AreaPrincipalStyled>
                 <div className= "procurar">
                     <input type="text" name="" id="" placeholder="Pesquisar" />
@@ -64,7 +64,11 @@ export default function Feed() {
                     
                     <PulicacaoFeed usuario= "Isaque Cruz" fotoPerfil={FotoPerfil3} imagemPubli={BackgroundFeed3} texto= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a fringilla dignissim, sapien justo lacinia risus, eu feugiat nulla ante eu neque. " />
                 </div>
-        </AreaPrincipalStyled> 
+                </AreaPrincipalStyled> 
+
+            {/* <LateralStyled>
+                <h1>sessao</h1>
+            </LateralStyled> */}
 {/* 
         <div className= "sidebar-left">
             <div className= "teste1">
