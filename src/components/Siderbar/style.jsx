@@ -11,10 +11,6 @@ export const SidebarStyled = styled.section`
   position: fixed;
   background: #fff;
 
-  .perfilMenu {
-    display: flex;
-    gap
-  }
 
   .perfilMenu header {
     display: flex;
@@ -91,6 +87,7 @@ export const SidebarStyled = styled.section`
       width: 100%;
       min-height: 10rem;
       padding: 0.5rem;
+      gap: 5rem;
     }
 
     .fotoPerfil {
