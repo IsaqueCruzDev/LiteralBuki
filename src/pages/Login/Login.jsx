@@ -1,27 +1,34 @@
 import { LoginStyled, InformacoesLoginStyled } from "./style.jsx";
 import { Link } from "react-router-dom";
+// import { useNavigate  } from "react-router-dom";
 import BukiLogo from "../../assets/img/bukiLogo.svg";
 import { useState } from "react";
 
-export default function Cadastro() {
+export default function Login(props) {
 
-  const [usuario, setUsuario] = useState({
-    username: "",
-    password: ""
+  // const [usuario, setUsuario] = useState({
+  //   username: "",
+  //   password: ""
+  // });
+
+  const [login, setLogin] = useState({
+    username: '',
+    password: ''
   });
 
-  const [login, setLogin] = useState(usuario);
+  // const navigate = useNavigate();
 
   const handleChange = (e) => {
     setLogin({...login, [e.target.name]: e.target.value});
+    console.log(e.target.value)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const loginJson = JSON.stringify(login);
-    console.log(loginJson);
+    // props.setUsername(login.username);
+    // navigate('/feed', { state: { usuario: login.username, senha: login.password } });
   }
-
   return (
     <LoginStyled>
       <InformacoesLoginStyled>
@@ -77,7 +84,9 @@ export default function Cadastro() {
                 </Link>
               </div>
             </div>
+            <Link to="/feed">
               <button className="botao">Entrar</button>
+              </Link>
           </form>
         </div>
       </div>

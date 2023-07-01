@@ -1,84 +1,27 @@
 import {
   NotificacaoStyled,
-  SidebarStyled,
   SeguraStyled,
-  MenuStyled,
-  MenuHamburguerStyled,
-  NavegacaoUl,
-  NavegacaoOpcoesStyled
 } from "./style.jsx";
+
+import Sidebar from "../../components/Siderbar/Sidebar.jsx";
 
 // import LogoBuki from "../../assets/img/bukiLogo.svg";
 import NotificacaoContent from "../../components/Notificacao/NotificacaoContent/NotificacaoContent.jsx";
-import MenuIcon from "../../assets/img/Notificacoes/menu-icon.svg";
+import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Aba() {
-  const [show, setShow] = useState(false);
-
-  const handleToggle = () => {
-    setShow(!show);
-    console.log(show);
-  };
+function Notificacoes() {
 
   return (
     <SeguraStyled>
-      <SidebarStyled>
-        <div className= "perfilMenu">
-          <header>
-            <img
-              src="/src/assets/img/Notificacoes/WhatsApp Image 2023-06-10 at 22.57.43.jpeg"
-             className= "fotoPerfil" />
-          </header>
-
-          <div className= "navegacao">
-            <NavegacaoOpcoesStyled show={show}>
-              <NavegacaoUl>
-                <li className= "itemMenu">
-                  <i className= "fa-solid fa-user"></i>
-                  <span>Meu Perfil</span>
-                </li>
-
-                <li className= "itemMenu">
-                  <i className="fa-solid fa-home"></i>
-                  <span>Feed</span>
-                </li>
-
-                <li className="itemMenu">
-                  <i className="fa-solid fa-comment"></i>
-                  <span>Chat</span>
-                </li>
-
-                <li className="abaEscolhida itemMenu">
-                  <i className="fa-solid fa-bell"></i>
-                  <span>Notificações</span>
-                </li>
-
-                <li className="itemMenu">
-                  <i className="fa-solid fa-lightbulb"></i>
-                  <span>Meu Projeto</span>
-              </li>
-              </NavegacaoUl>
-
-          <div className= "final">
-            <ul>
-                <li><a href="#"><i className="fa-sharp fa-solid fa-gear"></i><h4>Configurações</h4></a></li>
-                  <li><a href="#"><i className="fa-sharp fa-solid fa-circle-question"></i><h4>Ajuda</h4></a></li>
-                <Link to='/'>
-                <li><a href="#"><i className="fa-solid fa-right-from-bracket"></i><h4>Sair</h4></a></li>
-                </Link>
-            </ul>
-          </div>
-              </NavegacaoOpcoesStyled>
-          </div>
-
-          <MenuStyled onClick={handleToggle}>
-              <MenuHamburguerStyled src= {MenuIcon} />
-            </MenuStyled>
-        </div>
-      </SidebarStyled>
-      
+            <Sidebar tipoItem3="abaEscolhida"
+                itemSidebar1={<ItemSidebar nomeItem="Meu Perfil" icon="fa-solid fa-user" />}
+                itemSidebar2={<ItemSidebar nomeItem="Feed" icon="fa-solid fa-home" />}
+                itemSidebar3={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
+                itemSidebar4={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
+        
+            />
     <NotificacaoStyled>
       <div className= "container">
         <div className= "notificacao">
@@ -210,4 +153,4 @@ function Aba() {
   );
 }
 
-export default Aba;
+export default Notificacoes;

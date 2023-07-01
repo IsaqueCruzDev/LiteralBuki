@@ -111,6 +111,29 @@
     right: 2.8rem;
 }
 
+
+@media (min-width: 1500px) { 
+
+    .vetorLivro1 {
+        position: relative;
+        left: -120rem;
+        bottom: -22rem;
+    }
+    
+    .vetorLivro2 {
+        position: absolute;
+        bottom: 23.3rem;
+        left: 53rem;
+    }
+    
+    .vetorLivro3 {
+        position: absolute;
+        top: 21rem;
+        right: 2.8rem;
+    }
+    
+}
+
 @media (max-width: 1280px) { 
     .vetorLivro1 {
         position: static;
