@@ -183,8 +183,13 @@ export const CadastroStyled = styled.section`
 
     }
 
-    @media(max-width: 442px) {
-
+    @media(max-width: 480px) {
+        .bukiHome {
+        position: absolute;
+        display: flex;
+        width: 6rem;
+        bottom: -10em;
+    }
     }   
 `;
 

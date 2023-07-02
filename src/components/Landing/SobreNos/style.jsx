@@ -52,17 +52,26 @@ export const SobreNosTextStyled = styled.div`
 `;
 
 export const AreaFotoStyled = styled.div`
-    width: 43rem;
+    width: inherit;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     p {
         font-size: 1.4rem;
         color: #F74B35;
     }
+    
 `;
 
 export const EquipeBukiStyled = styled.img`
     width: inherit;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 export const ApoioStyled = styled.section`

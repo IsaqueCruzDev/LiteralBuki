@@ -23,7 +23,7 @@ export default function Cadastro() {
       headers:{
         'Content-type':'application/json',
         'Accept':'application/json'
-      }
+      } 
     })
     // {.then(retorno = retorno.json())
     // .then(retorno_convertido => {
@@ -148,7 +148,7 @@ export default function Cadastro() {
 
       <span className= "bukiHome">
         <Link to="/">
-          <img src={BukiLogo} alt="" />
+          <img src={BukiLogo} />
         </Link>
       </span>
     </CadastroStyled>

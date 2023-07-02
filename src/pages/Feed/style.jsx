@@ -6,15 +6,12 @@ export const FeedStyled = styled.section`
     position: relative;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     
     .segura {
         margin-left: 25rem;
     }
 
-    .lateralDireita {
-        display: flex;
-    }
-    
 .sidebar-right {
     width: 15.25rem;
     height: 62.625rem;
@@ -131,11 +128,6 @@ img {
 }
 
 @media (max-width: 1000px) {
-
-    .lateralDireita {
-        display: flex;
-        position: absolute;
-    }
     
     .input-publicar input {
         width: 100%;
@@ -354,22 +346,45 @@ export const AreaPrincipalStyled = styled.section`
     margin-top: 38rem;
 }
 
+@media ( max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    border-left: 1px solid #DBD4D4;
+    border-right: 1px solid #DBD4D4;
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 43rem;
+}
+
+`;
+
+export const LateralDireitaStyled = styled.div`
+    width: auto;
+
+    @media (max-width: 1000px) {
+        display: flex;
+        position: absolute;
+        overflow-x: auto;
+        min-width: 100%;
+        max-width: 100%;
+    }
 `;
 
 export const LateralStyled = styled.section`
     width: 30rem;
     display: flex;
     flex-direction: column;
-
+    
     @media (max-width: 1000px) {
         margin-top: 13.1rem;
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: row;
         gap: 1rem;
         padding: 1rem;
         background: linear-gradient(to left top, #EA6564, #5272A5);
-
-
     }
 `;

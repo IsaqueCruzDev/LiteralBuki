@@ -1,4 +1,4 @@
-import { FeedStyled, AreaPrincipalStyled, LateralStyled } from "./style.jsx";
+import { FeedStyled, AreaPrincipalStyled, LateralStyled, LateralDireitaStyled } from "./style.jsx";
 
 import Sidebar from "../../components/Siderbar/Sidebar.jsx";
 import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
@@ -98,7 +98,7 @@ export default function Feed() {
         </div>
       </AreaPrincipalStyled>
 
-      <div className= "lateralDireita">
+      <LateralDireitaStyled>
         <LateralStyled>
           <PostagemLateral
             titulo="Anne Lannister"
@@ -131,8 +131,9 @@ export default function Feed() {
             texto="
                 É só clicar e aproveitar! ;)"
           />
+          
         </LateralStyled>
-      </div>
+      </LateralDireitaStyled>
       {/* 
         <div className= "sidebar-left">
             <div className= "teste1">
