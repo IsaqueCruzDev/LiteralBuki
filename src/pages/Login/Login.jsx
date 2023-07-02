@@ -6,17 +6,16 @@ import { useState } from "react";
 
 export default function Login(props) {
 
-  // const [usuario, setUsuario] = useState({
-  //   username: "",
-  //   password: ""
-  // });
+  const [usuario, setUsuario] = useState({
+    username: "",
+    password: ""
+  });
 
   const [login, setLogin] = useState({
     username: '',
     password: ''
   });
 
-  // const navigate = useNavigate();
 
   const handleChange = (e) => {
     setLogin({...login, [e.target.name]: e.target.value});
@@ -26,8 +25,6 @@ export default function Login(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const loginJson = JSON.stringify(login);
-    // props.setUsername(login.username);
-    // navigate('/feed', { state: { usuario: login.username, senha: login.password } });
   }
   return (
     <LoginStyled>
