@@ -2,22 +2,28 @@ import { CadastroStyled, InformacoesCadastroStyled } from "./style.jsx";
 import { Link } from "react-router-dom";
 import BukiLogo from "../../assets/img/bukiLogo.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Cadastro() {
 
   const [senhaMatch, setSenhaMatch] = useState(true);
 
   const [usuario, setUsuario] = useState({
-    name: "",
-    username: "",
+    nome: "",
+    usuario: "",
     email: "",
-    password: "",
+    senha: ""
   });
+
+  // "nome":"Arthur",
+  //   "usuario":"art03",
+  //   "email":"arthur.soares@gmail.com",
+  //   "senha":"12345678" 
 
   const [cadastro, setCadastro] = useState(usuario);
 
   const cadastrar = () => {
-    fetch('http://localhost:8080/api/v1/registration',{
+    fetch('http://localhost:8080/usuario',{
       method:'post',
       body:JSON.stringify(cadastro),
       headers:{
@@ -38,6 +44,7 @@ export default function Cadastro() {
     e.preventDefault();
 
     const usuarioJSON = JSON.stringify(cadastro);
+    navigate("/login")
   };
 
   return (
@@ -83,7 +90,7 @@ export default function Cadastro() {
                 <input
                   type="text"
                   id="nome"
-                  name="name"
+                  name="nome"
                   placeholder="Nome"
                   required
                   className="input"
@@ -94,7 +101,7 @@ export default function Cadastro() {
                 <label htmlFor="nomeUsuario">Nome de Usuário</label>
                 <input
                   type="text"
-                  name="username"
+                  name="usuario"
                   id="nomeUsuario"
                   placeholder="Nome de Usuário"
                   required
@@ -119,7 +126,7 @@ export default function Cadastro() {
                 <input
                   type="password"
                   id="senha"
-                  name="password"
+                  name="senha"
                   placeholder="+8 Caracteres"
                   className="input"
                   onChange={handleChange}

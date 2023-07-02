@@ -12,7 +12,7 @@ export default function Login(props) {
 
   const [login, setLogin] = useState({
     email: '',
-    password: ''
+    senha: ''
   });
 
   const handleChange = (e) => {
@@ -38,11 +38,11 @@ export default function Login(props) {
     const handleSubmit = async (e) => {
       e.preventDefault();
       console.log(`E-mail: ${login.email}`);
-      console.log(`E-mail: ${login.password}`);
+      console.log(`Senha: ${login.senha}`);
       try {
         const response = await axios.post('http://localhost:8080/usuario/login', {
           email: login.email,
-          password: login.password
+          senha: login.senha
         });
           console.log(response.data);
           alert("Usuário identificado!")
@@ -82,12 +82,12 @@ export default function Login(props) {
           <form action="post" onSubmit={handleSubmit}>
             <div className= "inputDuplo">
               <div>
-                <label htmlFor="usuario">Nome de Usuário</label>
+                <label htmlFor="usuario">E-Mail</label>
                 <input
-                  type="text"
-                  id="usuario"
-                  name="usuario"
-                  placeholder="Nome de Usuário"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
                   required
                   className= "input"
                   onChange={handleChange}
