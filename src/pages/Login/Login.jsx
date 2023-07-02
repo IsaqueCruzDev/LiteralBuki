@@ -1,31 +1,59 @@
 import { LoginStyled, InformacoesLoginStyled } from "./style.jsx";
 import { Link } from "react-router-dom";
-// import { useNavigate  } from "react-router-dom";
 import BukiLogo from "../../assets/img/bukiLogo.svg";
 import { useState } from "react";
+import axios from "axios";
+
+import { useNavigate } from 'react-router-dom';
 
 export default function Login(props) {
 
-  const [usuario, setUsuario] = useState({
-    username: "",
-    password: ""
-  });
+  const navigate = useNavigate();
 
   const [login, setLogin] = useState({
-    username: '',
+    email: '',
     password: ''
   });
-
 
   const handleChange = (e) => {
     setLogin({...login, [e.target.name]: e.target.value});
     console.log(e.target.value)
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const loginJson = JSON.stringify(login);
+  // const logar = () => {
+  //   fetch('http://localhost:8080/api/v1/hello',{
+  //     method:'post',
+  //     body:JSON.stringify(login),
+  //     headers:{
+  //       'Content-type':'application/json',
+  //       'Accept':'application/json'
+  //     } 
+  //   })
+  //   // {.then(retorno = retorno.json())
+  //   // .then(retorno_convertido => {
+  //   //   console.log(retorno_convertido);
+  //   // } 
+  // }
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      console.log(`E-mail: ${login.email}`);
+      console.log(`E-mail: ${login.password}`);
+      try {
+        const response = await axios.post('http://localhost:8080/usuario/login', {
+          email: login.email,
+          password: login.password
+        });
+          console.log(response.data);
+          alert("Usuário identificado!")
+          navigate("/feed")
+      } catch (error) {
+          alert("Dados incorretos!")
+          console.log(error.response.data);
+          navigate("/login");
+    }
   }
+
   return (
     <LoginStyled>
       <InformacoesLoginStyled>
@@ -81,9 +109,7 @@ export default function Login(props) {
                 </Link>
               </div>
             </div>
-            <Link to="/feed">
               <button className="botao">Entrar</button>
-              </Link>
           </form>
         </div>
       </div>
@@ -95,4 +121,4 @@ export default function Login(props) {
       </span>
     </LoginStyled>
   );
-}
+  }
