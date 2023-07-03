@@ -66,6 +66,11 @@ export const ChatConversaStyled = styled.div`
         cursor: pointer;
     }
 
+    @media (max-width: 1000px) {
+        margin-top: 15rem;
+        margin-bottom: 3rem;
+    }
+
 `;
 
 export const ConversaStyled = styled.div`
@@ -112,13 +117,36 @@ export const ConversaStyled = styled.div`
     .divDigitarTexto {
         margin-top: 6%;
         border: .1rem solid #000;
+        display: flex;
+        align-items: center;
     }
 
     .divDigitarTexto input{
         height: 5.5rem;
-        width: 75%;
+        width: 100%;
         padding: 2rem;
         font-size: 1.6rem;
+        border-radius: 1rem ;
+    }
+
+    .divDigitarTexto button{
+        min-width: 8rem;
+        width: 10%;
+        padding: 2rem;
+        background-color: #8886E7;
+        text-align: center;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        color: #fff;
+        margin: 0 2%;
+    }
+
+    .file {
+        display: none;
     }
 
     @media (max-width: 1000px) {
@@ -137,6 +165,15 @@ export const ChatDivStyled = styled.div`
     @media (max-width: 1000px) {
         margin-left: 0;
         margin-top: 13.3rem;
+    }
+
+    
+    @media (max-width: 750px) {
+        border-right: .1rem solid #0000003d;
+        width: 10rem;
+        &::-webkit-scrollbar {
+        width: 12px;       
+    }
     }
 `;
 

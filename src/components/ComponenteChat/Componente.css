@@ -34,7 +34,9 @@
 
 .componente .imagemPerfil  {
     width: 6rem;
+    height: 6rem;
     border-radius: 4rem;
+    margin: 0 auto;
 }
 
 .componente h3{
@@ -46,4 +48,52 @@
 .componente p{
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+@media (max-width: 750px) {
+
+    .componente {
+        display: flex;
+        gap: .3rem;
+        padding: 1rem;
+        width: inherit;
+        transition: all 300ms ease-in-out;
+    }
+
+    
+.segura {
+    width: inherit;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding-bottom: 1.3rem;
+    display: none;
+}
+    
+
+    .componente:hover {
+        display: flex;
+        gap: .3rem;
+        padding: .8rem;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    
+.componente .imagemPerfil:hover  {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4rem;
+    border: .2rem solid  #8886E7;
+    box-shadow: 0 .3rem .3rem #8886E7;
+}
+
+
+    .componente h3{
+        display: none;
+
+    }
+    
+    
+    .componente p{
+        display: none;
+    }
 }

@@ -112,6 +112,10 @@ export default function Chat() {
 
                         <div className="divDigitarTexto">
                             <input type="text" placeholder="Digitar..."/>
+                            <label htmlFor="file"><i class="fa-solid fa-link"></i></label>
+                            <input type="file" id="file" className="file"/>
+                                <button>Enviar <span><i class="fa-solid fa-paper-plane-top"></i></span></button>
+
                         </div>
                     </ConversaStyled>
             </ChatConversaStyled>
