@@ -1,6 +1,13 @@
-import ChatStyled from "./style";
+import { ChatStyled,
+        ChatDivStyled 
+} from "./style";
+
+
 import Sidebar from "../../components/Sidebar/Sidebar.jsx";
 import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
+import ComponenteChat from "../../components/ComponenteChat/ComponenteChat";
+
+import Foto1 from "../../assets/img/Notificacoes/harry.jpeg";
 
 export default function Chat () {
     return (
@@ -11,8 +18,11 @@ export default function Chat () {
                 itemSidebar3={<ItemSidebar nomeItem="Chat" icon="fa-solid fa-solid fa-comment" />}
                 itemSidebar4={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
                 itemSidebar5={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
-        
             />
+
+            <ChatDivStyled>
+                <ComponenteChat imagem={Foto1} nome="José" mensagem="Olá, vi aqui que você..." />
+            </ChatDivStyled>
         </ChatStyled>
     )
 }

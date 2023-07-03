@@ -1,0 +1,8 @@
+.componente {
+    display: flex;
+    gap: .3rem;
+}
+
+.componente img {
+    width: 1rem;
+}
