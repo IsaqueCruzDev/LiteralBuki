@@ -7,11 +7,12 @@ export const ChatStyled = styled.section`
     .seguraSessoes {
         position: relative;
         border: 1px solid red;
+        max-height: 100vh;
     }
 `;
 
 export const ChatConversaStyled = styled.div`
-   
+    
 `;
 
 export const ChatDivStyled = styled.div`
