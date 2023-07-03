@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 425px;
+    height: auto;
+    margin-left: 30%;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+}
+
+.foto-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 28px;
+    margin-left: 1rem;
+}
+
+.editar-perfil {
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.editar {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    /* identical to box height */
+
+
+    color: #042A3F;
+}
+
+.editar h6 {
+    margin-left: -2rem;
+    font-size: 20px;
+}
+
+.editar2 button {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    background: #8886E7;
+    border-radius: 10px;
+    margin-left: -5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+    border: none;
+}
+
+.editar2 a {
+    text-decoration: none;
+}
+
+.info2 {
+    display: flex;
+    gap: 32px;
+    margin-left: 150px;
+    margin-top: -40px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #042A3F;
+}
+
+.info3 {
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.titulo h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+
+}
+
+.biografia p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
+    width: 700px
+    ;
+    color: #000000d2;
+}
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 60%;
+}
+
+
+.destaques img {
+    width: 100px;
+    border: 1px solid #666666;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.nav-post {
+    display: flex;
+    gap: 5rem;
+    margin-left: 1rem;
+    margin-top: 40px;
+    width: 90rem;
+    height: 50px;
+    margin-right: 10%;
+    border-top: 0.063rem solid rgba(0, 0, 0, 0.295);
+    justify-content: center;
+}
+
+.nav-post h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+    /* identical to box height */
+
+
+    color: #042A3F;
+    cursor: pointer;
+}
+
+.titulo-nav h3 {
+    border-bottom: 1px solid black;
+}
+
+.posts {
+    display: grid;
+    margin-left: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: start;
+    margin-left: -3rem;
+}
+
+.posts img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 1365px) {
+    .posts {
+        display: grid;
+        margin-left: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        gap: 10px;
+        margin-top: 20px;
+        justify-content: start;
+    }
+
+    .posts img {
+        margin-left: 10rem;
+    }
+}
+@media (max-width: 1245px) {
+
+    .posts {
+        display: grid;
+        margin-left: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1200px;
+        gap: 10px;
+        margin-top: 20px;
+        justify-content: start;
+    }
+
+    .posts img {
+        margin-left: 30rem;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .content {
+        margin-top: 150px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .flex {
+        display: flex;
+        gap: 50px;
+    }
+    
+    .foto-perfil img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin-top: 28px;
+        margin-left: 1rem;
+    }
+    
+    .editar-perfil {
+        display: flex;
+        gap: 100px;
+        margin-top: 60px;
+    }
+    
+    .editar {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 40px;
+        /* identical to box height */
+    
+    
+        color: #042A3F;
+    }
+    
+    .editar h6 {
+        margin-left: -2rem;
+        font-size: 20px;
+    }
+    
+    .editar2 button {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 40px;
+        background: #8886E7;
+        border-radius: 10px;
+        margin-left: -5rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+    
+        color: #FFFFFF;
+        cursor: pointer;
+    
+        border: none;
+    }
+    
+    .editar2 a {
+        text-decoration: none;
+    }
+    
+    .info2 {
+        display: flex;
+        gap: 32px;
+        margin-left: 150px;
+        margin-top: -40px;
+        font-family: 'Poppins';
+        font-size: 15px;
+        color: #042A3F;
+    }
+    
+    .info3 {
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+    
+    .titulo h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+        color: #000000;
+    
+    }
+    
+    .biografia p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: justify;
+        width: 350px;
+        color: #000000d2;
+    }
+    
+    .destaques {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 15px;
+        line-height: 30px;
+        margin-left: 1%;
+    }
+    
+    
+    .destaques img {
+        width: 100px;
+        border: 1px solid #666666;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    
+    .nav-post {
+        display: flex;
+        gap: 5rem;
+        margin-left: 1rem;
+        margin-top: 40px;
+        width: 90%;
+        height: 50px;
+        border-top: 0.063rem solid rgba(0, 0, 0, 0.295);
+        justify-content: center;
+    }
+    
+    .nav-post h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20px;
+        /* identical to box height */
+    
+    
+        color: #042A3F;
+    }
+    
+    .titulo-nav h3 {
+        border-bottom: 1px solid black;
+    }
+    
+    .posts {
+        display: grid;
+        margin-left: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1200px;
+        gap: 10px;
+        justify-content: start;
+    }
+    
+    .posts img {
+        margin-left: 1rem;
+    }
+    
+    .imagem2-post {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        margin-top: 150px;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin-left: 8%;
+    }
+
+    .editar2 button {
+        margin-left: -70%;
+    }
+}
