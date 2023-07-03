@@ -1,6 +1,5 @@
 import Sidebar from './style.jsx';
 
-
 function App() {
 
   

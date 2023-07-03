@@ -1,14 +1,9 @@
-import Section from "./style";
-import Back from "../../assets/img/perfilembacado.png";
-
+import "./Perfil.css"
 
 export default function Perfil () {
     return (
         <Section>
-            <div className="emBreve">
-                <h1>Em Desenvolvimento</h1>
-            </div>
-            <img src= {Back} />
+            <h1>Perfil</h1>
         </Section>
     )
 }
