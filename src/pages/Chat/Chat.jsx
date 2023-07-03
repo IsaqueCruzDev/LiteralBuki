@@ -1,7 +1,9 @@
 import {
     ChatStyled,
     ChatDivStyled,
-    ChatConversaStyled
+    ChatConversaStyled,
+    SeguraSessoes,
+    ConversaStyled
 } from "./style";
 
 
@@ -28,7 +30,7 @@ export default function Chat() {
             />
             </div>
 
-        <div className="seguraSessoes">
+        <SeguraSessoes>
             <div>
             <ChatDivStyled>
                 <ComponenteChat imagem={Foto1} nome="José" mensagem="Olá, vi aqui que você..." />
@@ -60,13 +62,15 @@ export default function Chat() {
 
             <div className="chat">
             <ChatConversaStyled>
-                <div className="headerChat">
                     <div className="perfilChat">
+                        <div className="seguraFoto">
                         <img src={Foto2} />
                         <div className="seguraTexto">
                             <div className="areaTextoPerfil">
                                 <h2>Stephany</h2>
                                 <p>Estrategista de Marketing</p>
+                            </div>
+                            </div>
                             </div>
 
                             <div className="opcoesPerfil">
@@ -74,12 +78,45 @@ export default function Chat() {
                                 <i class="fa-solid fa-video"></i>
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </div>
-                        </div>
+                        
                     </div>
-                </div>
+
+                    <ConversaStyled>
+                        <div className="mensagem1 mensagem">
+                            <img src= {Foto2} />
+                            <div className="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem corporis nobis dignissimos deserunt! Saepe fugiat aut voluptatibus iusto illum porro consectetur, minus, voluptates quisquam sint fuga impedit sit eos!</p>
+                            </div>
+                        </div>
+
+                        <div className="mensagem2 mensagem">
+                            <div className="texto2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem corporis nobis dignissimos deserunt! Saepe fugiat aut voluptatibus iusto illum porro consectetur, minus, voluptates quisquam sint fuga impedit sit eos!</p>
+                            </div>
+                            <img src= {Foto1} />
+                        </div>
+
+                        <div className="mensagem1 mensagem">
+                            <img src= {Foto2} />
+                            <div className="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem corporis nobis dignissimos deserunt! Saepe fugiat aut voluptatibus iusto illum porro consectetur, minus, voluptates quisquam sint fuga impedit sit eos!</p>
+                            </div>
+                        </div>
+
+                        <div className="mensagem2 mensagem">
+                            <div className="texto2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem corporis nobis dignissimos deserunt! Saepe fugiat aut voluptatibus iusto illum porro consectetur, minus, voluptates quisquam sint fuga impedit sit eos!</p>
+                            </div>
+                            <img src= {Foto1} />
+                        </div>
+
+                        <div className="divDigitarTexto">
+                            <input type="text" placeholder="Digitar..."/>
+                        </div>
+                    </ConversaStyled>
             </ChatConversaStyled>
             </div>
-            </div>
+            </SeguraSessoes>
         </ChatStyled>
     )
 }
