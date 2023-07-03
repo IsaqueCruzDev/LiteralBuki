@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from 'react'; //imrs
 import MenuIcon from "../../assets/img/Notificacoes/menu-icon.svg";
-import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
+import ItemSidebar from "../ItemSidebar/ItemSidebar.jsx";
 
 // import { useLocation } from 'react-router-dom';
 
@@ -42,7 +42,7 @@ export default function Sidebar(props) {
           <div className= "navegacao">
             <NavegacaoOpcoesStyled show={show}>
               <NavegacaoUl>
-                <Link to="/">
+                <Link to="/perfil">
                   <li className= {props.tipoItem1}> {props.itemSidebar1}</li> 
                 </Link>
                   
@@ -50,12 +50,16 @@ export default function Sidebar(props) {
                 <li className= {props.tipoItem2}>{props.itemSidebar2}</li>
                 </Link>
 
+                <Link to="/chat">
+                <li className= {props.tipoItem3}>{props.itemSidebar3}</li>
+                </Link>
+
                 <Link to="/notificacoes">
-                  <li className= {props.tipoItem3}>{props.itemSidebar3}</li>
+                  <li className= {props.tipoItem4}>{props.itemSidebar4}</li>
                 </Link>
                     
                 <Link to="/">
-                  <li className= {props.tipoItem4}>{props.itemSidebar4}</li>
+                  <li className= {props.tipoItem5}>{props.itemSidebar5}</li>
                 </Link>
                  
               </NavegacaoUl>

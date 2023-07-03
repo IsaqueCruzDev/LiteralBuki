@@ -1,6 +1,6 @@
 import { FeedStyled, AreaPrincipalStyled, LateralStyled, LateralDireitaStyled } from "./style.jsx";
 
-import Sidebar from "../../components/Siderbar/Sidebar.jsx";
+import Sidebar from "../../components/Sidebar/Sidebar.jsx";
 import ItemSidebar from "../../components/ItemSidebar/ItemSidebar.jsx";
 import BackgroundFeed1 from "../../assets/img/Notificacoes/publicação.svg";
 import BackgroundFeed2 from "../../assets/img/Notificacoes/publicacao2.jpg";
@@ -34,9 +34,13 @@ export default function Feed() {
           />
         }
         itemSidebar3={
+          <ItemSidebar nomeItem="Chat" icon="fa-solid fa-comment" />
+        }
+
+        itemSidebar4={
           <ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />
         }
-        itemSidebar4={
+        itemSidebar5={
           <ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />
         }
       />

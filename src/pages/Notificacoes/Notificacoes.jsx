@@ -3,7 +3,7 @@ import {
   SeguraStyled,
 } from "./style.jsx";
 
-import Sidebar from "../../components/Siderbar/Sidebar.jsx";
+import Sidebar from "../../components/Sidebar/Sidebar.jsx";
 
 // import LogoBuki from "../../assets/img/bukiLogo.svg";
 import NotificacaoContent from "../../components/Notificacao/NotificacaoContent/NotificacaoContent.jsx";
@@ -18,8 +18,9 @@ function Notificacoes() {
             <Sidebar tipoItem3="abaEscolhida"
                 itemSidebar1={<ItemSidebar nomeItem="Meu Perfil" icon="fa-solid fa-user" />}
                 itemSidebar2={<ItemSidebar nomeItem="Feed" icon="fa-solid fa-home" />}
-                itemSidebar3={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
-                itemSidebar4={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
+                itemSidebar3={<ItemSidebar nomeItem="Chat" icon="fa-solid fa-home" />}
+                itemSidebar4={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
+                itemSidebar5={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
         
             />
     <NotificacaoStyled>

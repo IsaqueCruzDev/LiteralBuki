@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Section = styled.section`
+const ChatStyled = styled.section`
     .emBreve {
         width: 100%;
         height: 100%;
@@ -16,13 +16,7 @@ const Section = styled.section`
             color: #8886E7;
             text-shadow: 0 .5rem .5rem #000;
         }
-
-        
     }
-
-    img {
-            width: 80%;
-        }
 `;
 
-export default Section;
+export default ChatStyled;
