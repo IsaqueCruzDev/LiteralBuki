@@ -6,11 +6,10 @@ import {
     NavegacaoUl
 } from "./style";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from 'react'; //imrs
 import MenuIcon from "../../assets/img/Notificacoes/menu-icon.svg";
 import ItemSidebar from "../ItemSidebar/ItemSidebar.jsx";
-
 // import { useLocation } from 'react-router-dom';
 
 export default function Sidebar(props) {

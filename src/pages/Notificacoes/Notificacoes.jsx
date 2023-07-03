@@ -15,11 +15,11 @@ function Notificacoes() {
 
   return (
     <SeguraStyled>
-            <Sidebar tipoItem3="abaEscolhida"
+            <Sidebar tipoItem4="abaEscolhida"
                 itemSidebar1={<ItemSidebar nomeItem="Meu Perfil" icon="fa-solid fa-user" />}
                 itemSidebar2={<ItemSidebar nomeItem="Feed" icon="fa-solid fa-home" />}
-                itemSidebar3={<ItemSidebar nomeItem="Chat" icon="fa-solid fa-home" />}
-                itemSidebar4={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />   }
+                itemSidebar3={<ItemSidebar nomeItem="Chat" icon="fa-solid fa-solid fa-comment" />}
+                itemSidebar4={<ItemSidebar nomeItem="Notificações" icon="fa-solid fa-bell" />}
                 itemSidebar5={<ItemSidebar nomeItem="Meu Projeto" icon="fa-solid fa-lightbulb" />}
         
             />
