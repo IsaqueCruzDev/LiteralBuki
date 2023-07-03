@@ -1,8 +1,40 @@
 .componente {
     display: flex;
     gap: .3rem;
+    padding: 1rem;
+    width: 100%;
 }
 
-.componente img {
-    width: 1rem;
+.segura {
+    width: inherit;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding-bottom: 1.3rem;
+}
+
+.nomeHora {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hora {
+    font-weight: bolder;
+    padding-right: 2%;
+}
+
+
+.componente .imagemPerfil  {
+    width: 6rem;
+    border-radius: 4rem;
+}
+
+.componente h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+.componente p{
+    font-size: 1.4rem;
+    font-weight: 400;
 }
