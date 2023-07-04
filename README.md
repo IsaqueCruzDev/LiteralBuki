@@ -1,5 +1,5 @@
   <h1 align="center">
-    <img src="img/bukiLogo.png" width="300" >
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/bukiLogo.png" width="300" >
 </h1>
 
 ## 📜 Sumário
