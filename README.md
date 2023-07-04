@@ -96,7 +96,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
   <div class="container" style="display: flex; justify-content=center; flex-wrap: wrap; gap: 15px;"> 
 
   <div style="width: 200px; height: 200px; border-radius: 100px; margin-bottom: 100px;">
-    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/leonardoIcon.jpg" style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover; object-position: center 20%;">
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/leonardoIcon.jpg" style=" width: 200px; height: 200px; object-fit: cover; object-position: center 20%;">
     <p style="text-align: center; font-weight: bold;">Product Owner e desenvolvedor Front-End</p>
     <div style="display: flex; gap: 20px; width: 200px; height: 30px; justify-content: center;">
         <a href="https://www.linkedin.com/in/leonardo-gon%C3%A7alves-dev/" target="_blank">
