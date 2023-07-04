@@ -2,6 +2,11 @@ import styled from "styled-components";
 import BackgroundCadastro from "../../assets/img/backgroundCadastro.jpg";
 export const CadastroStyled = styled.section`
 
+    .senhaMatchError {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
     .areaEntrar{
         display: flex;
         justify-content: flex-end;
