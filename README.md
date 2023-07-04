@@ -105,7 +105,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
         <a href="https://github.com/Leowins01" target="_blank">
             <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg" style="height: 30px;border-radius:15px">
         </a>
-        <a href="mailto:leo.d.anderson@hotmail.com"><img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px"></a>
+        <a href="mailto:leo.d.anderson@hotmail.com"><img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/InstagramIcon.svg" style="height: 30px; border-radius:15px"></a>
     </div>
 </div>
 
