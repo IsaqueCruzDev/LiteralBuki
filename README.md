@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
     <img src="img/bukiLogo.png" width="300" >
 </h1>
@@ -190,3 +191,7 @@ Aproximar a comunidade literária, expandir o networking e lançar profissionais
 
 
 <h3 id="licenca"> 📜 Licença</h3>
+=======
+# BUKI
+Uma página de cada vez.
+>>>>>>> bdf67c693ab1adb7d902b2d00f8b35817f66c2d9
