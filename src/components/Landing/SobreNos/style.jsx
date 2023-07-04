@@ -67,7 +67,7 @@ export const AreaFotoStyled = styled.div`
 `;
 
 export const EquipeBukiStyled = styled.img`
-    width: inherit;
+    width: 100%;
 
     @media (max-width: 480px) {
         width: 100%;
