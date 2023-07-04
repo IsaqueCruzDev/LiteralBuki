@@ -116,7 +116,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/guilherme-caetano1010/" target="_blank"><img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/lindinIcon.png" style="height: 50px; border-radius:15px;"></a>
     <a href="https://github.com/guilhermecaetano1010" target="_blank"> <img  src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:guilherme.caetano1010@gmail.com">
-    <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"> </a>
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"> </a>
     </div>
   </div>
 
@@ -127,7 +127,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/raquel-silva13/" target="_blank"> <img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="https://github.com/httpsquel" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:bezerra.raquel@outlook.com">
-   <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"> </a>
+   <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"> </a>
     </div>
   </div>
 
@@ -138,7 +138,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/isaqueocruz/" target="_blank"><img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="https://github.com/IsaqueCruzDev" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:Isaquedeoliveiracruz@outlook.com">
-    <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"></a>
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"></a>
     </div>
   </div>
   
@@ -149,7 +149,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/matheus-soares-bressani-a71754182/" target="_blank"><img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="https://github.com/BressaniEND" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:Msbressani@gmail.com">
-    <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"> </a>
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"> </a>
     </div>
   </div>
   
@@ -160,7 +160,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/lucasmviegas/" target="_blank"><img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="https://github.com/ViegasLucas" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:matheusviegaslucas@gmail.com">
-   <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"> </a>
+   <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"> </a>
     </div>
   </div>
   
@@ -171,7 +171,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/amanda-brand%C3%A3o03/" target="_blank"><img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:amandabssz03@gmail.com">
-    <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"></a>
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"></a>
     </div>
   </div>
 
@@ -182,7 +182,7 @@ Nossos objetivos são oferecer aos escritores a oportunidade de criar e publicar
     <a href="https://www.linkedin.com/in/arthur-java-jr/" target="_blank"><img src="[img/linkedinIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/linkedinIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="https://github.com/Artdev2004" target="_blank"> <img src="[img/gitHubIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/githubIcon.svg)" style="height: 30px; border-radius:15px;"></a>
     <a href="mailto:arthur.soares.nascimento@outlook.com">
-    <img src="[img/gmailIcon.svg](https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.svg)" style="height: 30px; border-radius:15px;"></a>
+    <img src="https://github.com/BukiLivros/DevelopmentBuki/blob/main/imagemReadme/gmailIcon.png" style="height: 30px; border-radius:15px;"></a>
     </div>
   </div>
   </div>
