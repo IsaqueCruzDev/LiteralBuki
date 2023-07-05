@@ -5,52 +5,51 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Cadastro() {
-
   const navigate = useNavigate();
 
   const [senhaMatch, setSenhaMatch] = useState(true);
 
-  const [confirmaSenha, setConfirmaSenha] = useState('');
+  const [confirmaSenha, setConfirmaSenha] = useState("");
 
   const confirmacaoSenha = (e) => {
     setConfirmaSenha(e.target.value);
-  }
+  };
 
   const [usuario, setUsuario] = useState({
     nome: "",
     usuario: "",
     email: "",
-    senha: ""
+    senha: "",
   });
 
   const [cadastro, setCadastro] = useState(usuario);
 
   const cadastrar = () => {
-    fetch('http://localhost:8080/usuario', {
-      method: 'post',
+    fetch("http://localhost:8080/usuario", {
+      method: "post",
       body: JSON.stringify(cadastro),
       headers: {
-        'Content-type': 'application/json',
-        'Accept': 'application/json'
-      }
+        "Content-type": "application/json",
+        Accept: "application/json",
+      },
     })
-      .then(retorno => retorno.json())
-      .then(retorno_convertido => {
+      .then((retorno) => retorno.json())
+      .then((retorno_convertido) => {
         console.log(retorno_convertido);
         navigate("/login");
       });
   };
 
   const handleChange = (e) => {
-    setCadastro({...cadastro, [e.target.name]: e.target.value});
-    };
+    setCadastro({ ...cadastro, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (cadastro.senha !== senhaMatch) {
+    if (cadastro.senha !== confirmaSenha) {
       setSenhaMatch(false);
       return;
-    } 
+    }
 
     if (cadastro.senha.length < 8) {
       setSenhaMatch(false);
@@ -143,7 +142,6 @@ export default function Cadastro() {
                   className="input"
                   onChange={handleChange}
                   required
-
                 />
               </div>
 
@@ -160,13 +158,18 @@ export default function Cadastro() {
                 />
               </div>
             </div>
-             {!senhaMatch && (<p className="senhaMatchError">As senhas não correspondem ou a senha não possui pelo menos 8 caracteres.</p>)}
-            <button className= "botao">Criar conta</button>
+            {!senhaMatch && (
+              <p className="senhaMatchError">
+                As senhas não correspondem ou a senha não possui pelo menos 8
+                caracteres.
+              </p>
+            )}
+            <button className="botao">Criar conta</button>
           </form>
         </div>
       </div>
 
-      <span className= "bukiHome">
+      <span className="bukiHome">
         <Link to="/">
           <img src={BukiLogo} />
         </Link>
